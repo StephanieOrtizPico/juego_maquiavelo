@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 5px;
+    width: 432px;
+    height: 432px;
+    background-color: #fff;
+    border: 2px solid #000;
+    position: center, center;
+}
+
+.casilla {
+    background-color: #f4f4f4;
+    border: 0.1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    width: 30px;
+    height: 45px;
+}
+
+.casilla2 {
+    background-color: #f4f4f4;
+    border: 0.1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    width: 45px;
+    height: 30px;
+}
+
+.casilla3 {
+    background-color: #f4f4f4;
+    border: 0.1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    width: 45px;
+    height: 45px;
+}
+
+.vacio {
+    visibility: hidden;
+}
+
+.controles {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Agregar diferentes colores para cada jugador */
+.jugador1 {
+    background-color: blue;
+}
+.jugador2 {
+    background-color: red;
+}
+.jugador3 {
+    background-color: green;
+}
+.jugador4 {
+    background-color: yellow;
+}
+
